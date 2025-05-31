@@ -1,0 +1,14 @@
+
+file_format: "1"
+id: kmball
+name: kmball
+type: shield
+features:
+  - keys
+  - studio
+outputs:
+  - usb
+  - ble
+siblings:
+  - kmball_left
+  - kmball_right

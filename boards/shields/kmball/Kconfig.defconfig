@@ -1,0 +1,14 @@
+
+if SHIELD_KMBALL_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "kmball"
+
+endif
+
+if SHIELD_KMBALL_LEFT || SHIELD_KMBALL_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif

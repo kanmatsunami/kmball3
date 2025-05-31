@@ -1,0 +1,4 @@
+config SHIELD_KMBALL_LEFT
+    def_bool $(shields_list_contains,kmball_left)
+config SHIELD_KMBALL_RIGHT
+    def_bool $(shields_list_contains,kmball_right)
