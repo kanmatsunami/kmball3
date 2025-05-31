@@ -1,44 +1,84 @@
-
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <0 1>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <10 11>;
+        };
+
+        caps {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <20 21>;
+        };
+
+        pgup {
+            bindings = <&kp PG_UP>;
+            key-positions = <5 6>;
+        };
+
+        pgdn {
+            bindings = <&kp PAGE_DOWN>;
+            key-positions = <15 16>;
+        };
+
+        nihongo {
+            bindings = <&kp LC(CAPSLOCK)>;
+            key-positions = <25 26>;
+        };
+
+        japanese {
+            bindings = <&kp LA(GRAVE)>;
+            key-positions = <26 27>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         layer_0 {
-            bindings =<
-                &none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none
+            bindings = <
+&lt 1 Q      &kp W        &kp E           &kp R           &kp T    &kp Y        &kp U           &kp I        &kp O       &kp P
+&kp A        &kp S        &kp D           &kp F           &kp G    &kp H        &kp J           &kp K        &kp L       &kp MINUS
+&mt LCTRL Z  &mt LCTRL X  &mt LEFT_GUI C  &mt LEFT_ALT V  &lt 1 B  &kp N        &kp M           &kp COMMA    &kp PERIOD  &lt 3 BACKSPACE
+&mkp LCLK    &kp LEFT     &kp RIGHT                                &lt 1 SPACE  &kp LEFT_SHIFT  &lt 2 ENTER
             >;
         };
 
         layer_1 {
-            bindings =<
-                &none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none
+            bindings = <
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3      &kp NUMBER_4   &kp N5     &kp NUMBER_6  &kp N7        &kp N8          &kp N9     &kp N0
+&kp ESCAPE    &kp GRAVE     &kp LA(GRAVE)     &none          &kp PG_UP  &none         &kp SQT       &kp SEMICOLON   &kp SLASH  &kp EQUAL
+&kp TAB       &kp CAPSLOCK  &kp LS(CAPSLOCK)  &kp PAGE_DOWN  &none      &kp LEFT      &kp UP_ARROW  &kp DOWN        &kp RIGHT  &kp DEL
+&kp LCTRL     &kp LEFT_GUI  &kp LEFT_ALT                                &none         &kp DOWN      &bt BT_CLR_ALL
             >;
         };
 
         layer_2 {
-            bindings =<
-                &none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none
+            bindings = <
+&kp F1   &kp F2   &kp F3  &kp F4  &kp F5   &none  &none  &none  &none  &none
+&kp F6   &kp F7   &kp F8  &kp F9  &kp F10  &none  &none  &none  &none  &none
+&kp F11  &kp F12  &none   &none   &none    &none  &none  &none  &none  &none
+&none    &none    &none                    &none  &none  &none
             >;
         };
 
         layer_3 {
-            bindings =<
-                &none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none
+            bindings = <
+&none  &none            &none  &none  &none  &none       &none  &none           &kp K_MUTE         &kp C_VOLUME_UP
+&none  &kp PRINTSCREEN  &none  &none  &none  &none       &none  &none           &kp K_VOLUME_UP    &kp C_VOL_DN
+&none  &none            &none  &none  &none  &none       &none  &none           &kp K_VOLUME_DOWN  &none
+&none  &none            &none                &bt BT_CLR  &none  &bt BT_CLR_ALL
             >;
         };
     };
