@@ -41,6 +41,16 @@
             bindings = <&kp LA(GRAVE)>;
             key-positions = <26 27>;
         };
+
+        midclk {
+            bindings = <&mkp MCLK>;
+            key-positions = <30 31>;
+        };
+
+        rclk {
+            bindings = <&mkp RCLK>;
+            key-positions = <31 32>;
+        };
     };
 
     keymap {
