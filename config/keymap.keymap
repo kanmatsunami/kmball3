@@ -58,10 +58,10 @@
 
         layer_0 {
             bindings = <
-&lt 1 Q      &kp W        &kp E           &kp R           &kp T    &kp Y        &kp U           &kp I        &kp O       &kp P
-&kp A        &kp S        &kp D           &kp F           &kp G    &kp H        &kp J           &kp K        &kp L       &kp MINUS
-&mt LCTRL Z  &mt LCTRL X  &mt LEFT_GUI C  &mt LEFT_ALT V  &lt 1 B  &kp N        &kp M           &kp COMMA    &kp PERIOD  &lt 3 BACKSPACE
-&mkp LCLK    &kp LEFT     &kp RIGHT                                &lt 1 SPACE  &kp LEFT_SHIFT  &lt 2 ENTER
+&lt 1 Q           &kp W              &kp E           &kp R           &kp T    &kp Y        &kp U           &kp I        &kp O       &kp P
+&mt LEFT_SHIFT A  &kp S              &kp D           &kp F           &kp G    &kp H        &kp J           &kp K        &kp L       &kp MINUS
+&mt LCTRL Z       &mt LCTRL X        &mt LEFT_GUI C  &mt LEFT_ALT V  &lt 1 B  &kp N        &kp M           &kp COMMA    &kp PERIOD  &lt 3 BACKSPACE
+&mkp LCLK         &mt LEFT_GUI LEFT  &lt 1 SPACE                              &lt 1 SPACE  &kp LEFT_SHIFT  &lt 2 ENTER
             >;
         };
 
@@ -70,7 +70,7 @@
 &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3      &kp NUMBER_4   &kp N5     &kp NUMBER_6  &kp N7        &kp N8          &kp N9     &kp N0
 &kp ESCAPE    &kp GRAVE     &kp LA(GRAVE)     &none          &kp PG_UP  &none         &kp SQT       &kp SEMICOLON   &kp SLASH  &kp EQUAL
 &kp TAB       &kp CAPSLOCK  &kp LS(CAPSLOCK)  &kp PAGE_DOWN  &none      &kp LEFT      &kp UP_ARROW  &kp DOWN        &kp RIGHT  &kp DEL
-&kp LCTRL     &kp LEFT_GUI  &kp LEFT_ALT                                &none         &kp DOWN      &bt BT_CLR_ALL
+&kp LCTRL     &kp RIGHT     &kp LEFT_ALT                                &none         &kp DOWN      &bt BT_CLR_ALL
             >;
         };
 
